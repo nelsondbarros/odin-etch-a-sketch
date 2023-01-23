@@ -1,7 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     display: grid;
     background-color: wheat;
     border: 1px solid gold;
-    grid-template-columns: repeat(16, 100px);
-    grid-template-rows: repeat(16, 100px);
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    width: 567px;
+    height: 567px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.container > div {
+    border: 1px solid;
+}
+
+.container > div:hover {
+    background-color: blueviolet;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
